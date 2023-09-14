@@ -1,0 +1,33 @@
+
+.menubar{
+    background-color: #d5d5d5;
+    color: #010101;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    /* text-decoration: none; */
+}
+.menubar a{
+    text-decoration: none;
+    color: #010101;
+    padding: 5px;
+}
+.menubar a:hover{
+    color: #fff;
+    background-color: #010101;
+    border-radius: 5px;
+    /* padding: 0.5rem; */
+    padding: 5px;
+}
+.table{
+    /* border: 3px solid #010101;
+    font-family: arial, sans-serif;
+    width: 70%;
+    padding: 10px; */
+    text-align: center;
+    border: 1px solid #b82424;
+    padding: 8px;
+    border-collapse: collapse;
+}
