@@ -11,7 +11,7 @@ const Navbar = () => {
           <ul>
             <li><a href="Books/Get">Get Data</a></li>
             <li><a href="Books/Post">Post Data</a></li>
-            <li><a href="Books/Data">Delete Data</a></li>
+            <li><a href="Books/Delete">Delete Data</a></li>
             <li><a href="#">Patch Data</a></li>
           </ul>
         </li>
