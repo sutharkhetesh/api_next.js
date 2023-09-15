@@ -3,12 +3,20 @@ import styles from "../styles/home.module.css"
 
 const Navbar = () => {
   return <>
-    <nav>
-      <ul className={styles.menubar}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/books">Books</a></li>
-        <li><a href="/author">Authors</a></li>
-        <li><a href="/">Contact</a></li>
+    <nav className={styles.navbar}>
+      <ul className={styles.nav}>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Books</a>
+          <ul>
+            <li><a href="Books/Get">Get Data</a></li>
+            <li><a href="Books/Post">Post Data</a></li>
+            <li><a href="Books/Data">Delete Data</a></li>
+            <li><a href="#">Patch Data</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Author</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </>
