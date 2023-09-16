@@ -69,7 +69,7 @@ export default function Books() {
         placeholder="Price"
       />
       <button className={styles.btn} onClick={handleSubmit} disabled={isButtonDisabled}>
-        Submit
+      Create Data
       </button>
      
     </div>

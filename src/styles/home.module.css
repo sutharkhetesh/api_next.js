@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #000000;
+    background-color: #f9f8f8;
     position: relative;
     z-index: 999;
     width: 100%;
@@ -13,7 +13,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-background: rgb(255, 255, 255);
+background: rgb(114, 110, 110);
 
 }
 
@@ -23,7 +23,7 @@ background: rgb(255, 255, 255);
 }
 
 .navbar li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: block;
     padding: 20px 10px;
     text-decoration: none;

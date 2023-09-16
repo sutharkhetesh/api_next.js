@@ -12,7 +12,7 @@ const Navbar = () => {
             <li><a href="Books/Get">Get Data</a></li>
             <li><a href="Books/Post">Post Data</a></li>
             <li><a href="Books/Delete">Delete Data</a></li>
-            <li><a href="#">Patch Data</a></li>
+            <li><a href="Books/Update">Patch Data</a></li>
           </ul>
         </li>
         <li><a href="#">Author</a></li>

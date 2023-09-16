@@ -30,7 +30,7 @@ export default function Books() {
         value={idToDelete}
         onChange={(e) => setIdToDelete(e.target.value)}
       />
-      <button onClick={handleDelete} className={styles.btn} >Delete</button>
+      <button onClick={handleDelete} className={styles.btn} >Delete Data</button>
       {isDeleted && <p>Data has been deleted.</p>}
     </div>
   );
