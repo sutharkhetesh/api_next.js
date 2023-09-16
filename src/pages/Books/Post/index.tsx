@@ -14,6 +14,7 @@ export default function Books() {
   const [books_price, setBooksPrice] = useState<number | string>("");
   const books_status = false;
  
+  const isButtonDisabled = !books_title || !library_name || books_price === "";
 
   const handleSubmit = async () => {
     try {
@@ -26,7 +27,10 @@ export default function Books() {
       });
 
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        alert("Network response was not ok");
+      }
+      else{
+        alert("Data has been added")
       }
 
       // Clear the input fields
@@ -45,6 +49,7 @@ export default function Books() {
       <input
         className={styles.input}
         value={books_title}
+        
         type="text"
         onChange={(e) => setBooksTitle(e.target.value)}
         placeholder="Title"
@@ -63,7 +68,7 @@ export default function Books() {
         onChange={(e) => setBooksPrice(e.target.valueAsNumber)}
         placeholder="Price"
       />
-      <button className={styles.btn} onClick={handleSubmit}>
+      <button className={styles.btn} onClick={handleSubmit} disabled={isButtonDisabled}>
         Submit
       </button>
      
