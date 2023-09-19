@@ -72,7 +72,8 @@ type book = {
     price: string;
     author: string;
     condition: string;
-   
+    image: string;
+
 }
 
 export default function Home() {
@@ -110,7 +111,8 @@ export default function Home() {
                         <th>Price</th>
                         <th>Author</th>
                         <th>Condition</th>
-                        
+                        <th>Image</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -121,7 +123,8 @@ export default function Home() {
                             <td>{book.price}</td>
                             <td>{book.author}</td>
                             <td>{book.condition}</td>
-                            
+                            <td>{book.image}</td>
+
                         </tr>
                     ))}
                 </tbody>
