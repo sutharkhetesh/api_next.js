@@ -2,7 +2,8 @@
     background-color: #f9f8f8;
     position: relative;
     z-index: 999;
-    width: 100%;
+    width: 100vw;
+    
     position: fixed;
     top: 0;
     
@@ -51,14 +52,121 @@ background: rgb(114, 110, 110);
     display: block;
 }
 
-/* Change the background color of dropdown links on hover */
+ /*Change the background color of dropdown links on hover */
 .navbar ul ul li a:hover {
     background-color: #000000;
     color: white;
     
-}
+}  
 .image{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     
+}
+
+  
+/*  */
+.text{
+   width: 100vw;   
+}
+.contain{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    /* text-align: -webkit-center; */
+    /* flex-wrap: wrap; */
+   
+   
+}
+.footer {
+    width: 100%;
+   
+    background-color: black;
+    /* padding-left: 7%; */
+  }
+
+  .footer .col {
+    width: 100vw;
+    height: auto;
+    /* display: block; */
+    box-sizing: border-box;
+    padding: 20px;
+   
+
+  }
+  .footer .col h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 20px 0;
+    color: #FF0063;
+    text-transform: uppercase;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: white;
+    font-size: 15px;
+    padding: 10px 0px;
+  }
+  .address ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+.footer .col ul li:hover {
+    cursor: pointer;
+    color: lightgray;
+    font-weight: bold;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .address {
+      width: 1000px;
+      display: block;
+    }
+    
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h2 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+     
+      .footer .col h2 {
+        font-size: 10px; 
+      }
+      .footer .col ul li {
+        font-size: 10px;
+      }
+  }
+   @media only screen and (max-width: 390px) {
+    .footer .col {
+      width: 100%;
+     
+     
+    } 
 }
