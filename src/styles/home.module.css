@@ -14,7 +14,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-background: rgb(114, 110, 110);
+background: rgb(255, 255, 255);
 
 }
 
@@ -24,7 +24,7 @@ background: rgb(114, 110, 110);
 }
 
 .navbar li a {
-    color: rgb(255, 255, 255);
+    color: rgb(35, 7, 246);
     display: block;
     padding: 20px 10px;
     text-decoration: none;
@@ -193,7 +193,7 @@ background: rgb(114, 110, 110);
   flex-wrap: wrap;
 
   /* padding-top: 20px; */
- background-color:rgb(194, 194, 194);
+ background-color:white;
  
  
 }
@@ -207,8 +207,9 @@ background: rgb(114, 110, 110);
   text-align: center;
   /* width: 100%; */
   /* padding: 20px; */
-  padding-top: 20px;
-  background-color:rgb(194, 194, 194);
+  padding: 20px;
+  background-color:white;
   color: #000000;
+ 
 
 }
