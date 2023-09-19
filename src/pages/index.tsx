@@ -1,7 +1,11 @@
 
 import Image from "next/image"
 import Navbar from "../components/Navbar"
-import images from "./image/img1.jpg"
+import images1 from "./image/ima2.png"
+import images2 from "./image/img3.png"
+import images3 from "./image/img4.png"
+
+
 import styles from "../styles/home.module.css"
 import ActionAreaCard from "@/components/Card"
 import { useEffect, useState } from "react"
@@ -37,10 +41,12 @@ export default function Home() {
     <>
 
       <Navbar />
-      <Image className={styles.image} src={images} alt="img" />
+      <Image className={styles.image} src={images1} alt="img" />
+      
+      
       <div className="new">
 
-      <h1 className={styles.bio}>1 - 30  results for biography</h1>
+      <h1 className={styles.bio}>New Release Books</h1>
       </div>
       <div className={styles.cards} >
         {userData.map((book, index) => (
@@ -48,6 +54,8 @@ export default function Home() {
         ))
         }
       </div>
+      <Image className={styles.image} src={images2} alt="img" />
+      <Image className={styles.image} src={images3} alt="img" />
       <footer className={styles.text}>
         <div className={styles.footer}>
           <div className={styles.contain}>
@@ -79,8 +87,7 @@ export default function Home() {
               <h2>Resources</h2>
               <ul>
                 <li>Webmail</li>
-                <li>Web templates</li>y
-
+                <li>Web templates</li>
                 <li>Email templates</li>
               </ul>
             </div>

@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #f9f8f8;
+    background-color:  #3FBF3F;
     position: relative;
     z-index: 999;
     width: 100%;
@@ -14,7 +14,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-background: rgb(255, 255, 255);
+background: #3FBF3F;
 
 }
 
@@ -24,7 +24,7 @@ background: rgb(255, 255, 255);
 }
 
 .navbar li a {
-    color: rgb(35, 7, 246);
+    color: white;
     display: block;
     padding: 20px 10px;
     text-decoration: none;
@@ -102,7 +102,7 @@ background: rgb(255, 255, 255);
     font-size: 20px;
     line-height: 27px;
     padding: 20px 0;
-    color: #FF0063;
+    color: #3FBF3F;
     text-transform: uppercase;
   }
   .footer .col ul {
@@ -178,7 +178,7 @@ background: rgb(255, 255, 255);
 .head{
   text-align: center;
 
-  color: #000000;
+  color: #3FBF3F;
  
 }  
 .boxouter{
@@ -209,7 +209,7 @@ background: rgb(255, 255, 255);
   /* padding: 20px; */
   padding: 20px;
   background-color:white;
-  color: #000000;
+  color: #3FBF3F;
  
 
 }
