@@ -76,6 +76,7 @@ type book = {
 
 }
 
+
 export default function Home() {
     const [userData, setUserData] = useState<book[]>([]);
 
@@ -100,6 +101,18 @@ export default function Home() {
             });
     }, []);
 
+    function deleteBook(id: number): void {
+        fetch(`http://localhost:8000/show/${id}`, {
+            method: 'DELETE',
+        }).then(() => {
+            alert('Book deleted successfully')
+            window.location.reload();
+        }).catch((error) => {
+            console.error('Error:', error);
+            alert('Error deleting book')
+        });
+    }
+
     return (
         <div>
             <h1 className={styles.head}>Books Details (Get Data)</h1>
@@ -112,18 +125,20 @@ export default function Home() {
                         <th>Author</th>
                         <th>Condition</th>
                         <th>Image</th>
+                        <th>Action</th>
 
                     </tr>
                 </thead>
                 <tbody>
-                    {userData.map((book) => (
+                    {userData.map((book, index) => (
                         <tr key={book.id}>
-                            <td>{book.id}</td>
+                            <td>{index + 1}</td>
                             <td>{book.title}</td>
                             <td>{book.price}</td>
                             <td>{book.author}</td>
                             <td>{book.condition}</td>
                             <td>{book.image}</td>
+                            <td><button className={styles.button} onClick={()=>deleteBook(book.id)}>Delete</button></td>
 
                         </tr>
                     ))}

@@ -1,9 +1,9 @@
 
 import Image from "next/image"
 import Navbar from "../components/Navbar"
-import images1 from "./image/ima2.png"
-import images2 from "./image/img3.png"
-import images3 from "./image/img4.png"
+import image1 from "./image/ima2.png"
+import image2 from "./image/img3.png"
+import image3 from "./image/img4.png"
 
 
 import styles from "../styles/home.module.css"
@@ -41,12 +41,12 @@ export default function Home() {
     <>
 
       <Navbar />
-      <Image className={styles.image} src={images1} alt="img" />
-      
-      
+      <Image className={styles.image} src={image1} alt="img" />
+
+
       <div className="new">
 
-      <h1 className={styles.bio}>New Release Books</h1>
+        <h1 className={styles.bio}>New Release Books</h1>
       </div>
       <div className={styles.cards} >
         {userData.map((book, index) => (
@@ -54,8 +54,8 @@ export default function Home() {
         ))
         }
       </div>
-      <Image className={styles.image} src={images2} alt="img" />
-      <Image className={styles.image} src={images3} alt="img" />
+      <Image className={styles.image} src={image2} alt="img" />
+      <Image className={styles.image} src={image3} alt="img" />
       <footer className={styles.text}>
         <div className={styles.footer}>
           <div className={styles.contain}>

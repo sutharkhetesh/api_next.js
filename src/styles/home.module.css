@@ -181,19 +181,10 @@ background: #3FBF3F;
   width: 100%;
   margin: 14px;
   height: 800px;
-  /* overflow: hidden; */
-
-  
+   
 }
-/* .wrapper{
-  height: 200px;
-  width: 100%;
-  overflow: hidden;
-
-} */
 .boxouter img{
 
-  /* width: 100%; */
   transition:0.3s ease;
   filter:grayscale(100%);
   cursor: pointer;
